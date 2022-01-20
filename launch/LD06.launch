@@ -1,0 +1,7 @@
+<launch>
+
+ <node name="LD06" pkg="ldlidar" type="ldlidar" args="LD06" output="screen" >
+ </node>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0.065 0 0.1 0 0 0 base_link laser 100" />
+
+</launch>
